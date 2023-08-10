@@ -1,0 +1,9 @@
+admin:
+  password: password
+  superuser: true
+  roles: [Administrator, Operator]
+
+akhenry:
+  displayName: Andrew Henry
+  password: password
+  roles: [Operator]
