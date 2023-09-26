@@ -8,3 +8,6 @@
 
 # VSCode
 .vscode/settings.json
+
+# Node
+node
