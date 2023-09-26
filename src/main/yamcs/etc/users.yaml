@@ -1,11 +1,5 @@
-administrator:
+user:
   password: password
   superuser: true
   enabled: true
-  roles: [Administrator, Operator]
-
-testuser:
-  displayName: Test User
-  password: password
-  enabled: true
-  roles: [Operator]
+  roles: [Administrator]
