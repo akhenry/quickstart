@@ -16,7 +16,7 @@
     Update this to the latest Yamcs release.
     Check https://mvnrepository.com/artifact/org.yamcs/yamcs-core
     -->
-    <yamcsVersion>5.8.5</yamcsVersion>
+    <yamcsVersion>5.8.3</yamcsVersion>
   </properties>
 
   <dependencies>
@@ -69,6 +69,22 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.github.eirslett</groupId>
+        <artifactId>frontend-maven-plugin</artifactId>
+        <version>1.14.0</version>
+        <executions>
+          <execution>
+            <id>install node</id>
+            <goals>
+                <goal>install-node-and-npm</goal>
+            </goals>
+            <configuration>
+              <nodeVersion>v18.15.0</nodeVersion>
+          </configuration>
+        </execution>
+      </executions>
       </plugin>
     </plugins>
   </build>
