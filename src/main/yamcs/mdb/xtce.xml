@@ -85,14 +85,6 @@
 					<Enumeration value="7" label="ENUM_VALUE_7" />
 				</EnumerationList>
 			</EnumeratedParameterType>
-			<ArrayParameterType arrayTypeRef="float_t" name="ArrayOfFloats">
-            	<DimensionList>
-              		<Dimension>
-                		<StartingIndex><FixedValue>0</FixedValue></StartingIndex>
-                		<EndingIndex><FixedValue>49</FixedValue></EndingIndex>
-              		</Dimension>
-            	</DimensionList>
-          </ArrayParameterType>
 		</ParameterTypeSet>
 		<ParameterSet>
 			<Parameter name="CCSDS_Packet_ID" parameterTypeRef="CCSDS_Packet_ID_Type" />
@@ -136,10 +128,6 @@
 			<Parameter name="Enum_Para_1" parameterTypeRef="EnumerationTest" />
 			<Parameter name="Enum_Para_2" parameterTypeRef="EnumerationTest" />
 			<Parameter name="Enum_Para_3" parameterTypeRef="EnumerationTest" />
-
-			<Parameter name="Example_Array" parameterTypeRef="ArrayOfFloats">
-				<ParameterProperties dataSource="local"/>
-			</Parameter>
 		</ParameterSet>
 		<ContainerSet>
 			<SequenceContainer abstract="true" name="CCSDSPacket">
